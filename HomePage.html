@@ -33,7 +33,35 @@
         line-height: 19px;
         padding-top: 0.4em;
         padding-bottom: 0.4em;
+        text-align: center;
         /*outline: dotted red;*/
+      }
+
+      .content {
+        outline: solid red;
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content: center;
+        background-color: beige;
+      }
+
+      .flexcontainer {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: space-between;
+        padding: 0.5em;
+        background-color: yellow;
+      }
+
+      p.flex1 {
+        background-color: pink;
+        flex-grow: 2;
+      }
+
+      p.flex2 {
+        background-color: orange;
       }
 
       a {
@@ -82,13 +110,16 @@
     <!--END OF PAGE HEADER-->
 
     <!--START OF CONTENT SECTION-->
-    <div>
+    <div class="content">
       <h2>Introduction Statement: <span style="color: orange;">Attention</span> Grabber</h2>
-      <p>
+      <div class="flexcontainer">
+      <p class="flex1">
        (Insert text here) Example: My name is Isaiah Miller. I am a rising
         artist in Detroit. I have released music on Spotify and have more
         to come. Follow me to stay updated!
       </p>
+      <p class="flex2">Here is another paragraph.How long is the width?I am testing this out.</p>
+    </div>
     </div>
     <!--END OF CONTENT SECTION-->
 
