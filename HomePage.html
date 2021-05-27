@@ -1,60 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta-charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta-charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Knewave&family=Roboto&display=swap" rel="stylesheet">
     <title>Isaiah Miller Music</title>
     <style>
-      body {
-        width: 550px;
-        color: #444;
-        text-align: left;
-        font-family: Verdana, sans-serif;
-      }
-      h1 {
-        font-size: 40px;
-        color:#ab4353;
-        font-family: Georgia, serif;
-        line-height: 0.8;
-        text-align: center;
-      }
-      a {
-          color: purple;
-          background-color: white;
-          font-size: 18px;
-          font-weight: 400;
+
+      * {
+        margin: 0;
+        padding: 0;
       }
 
-      a:hover {
-        color:black;
+      body {
+        color: #444;
+        text-align: left;
+        font-family: Roboto, sans-serif;
+        /*outline: solid green;*/
+      }
+
+      h1 {
+        font-size: 55px;
+        color:#ab4353;
+        font-family: Knewave, sans-serif;
+        line-height: 1.2;
+        text-align: center;
+        letter-spacing: 3px;
+      }
+
+      h2{
+        line-height: 19px;
+        padding-top: 0.4em;
+        padding-bottom: 0.4em;
+        text-align: center;
+        /*outline: dotted red;*/
+      }
+
+      .content {
+        outline: solid red;
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content: center;
         background-color: beige;
       }
 
+      .flexcontainer {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: space-between;
+        padding: 0.5em;
+        background-color: yellow;
+      }
+
+      p.flex1 {
+        background-color: pink;
+        flex-grow: 2;
+      }
+
+      p.flex2 {
+        background-color: orange;
+      }
+
+      a {
+        text-decoration: none;
+        color: beige;
+        /*outline: dotted orange;*/
+      }
+
+      a:hover {
+        color: purple;
+      }
+
+      ul.socialmedia {
+        background-color: orange;
+        list-style-type: none;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: stretch;
+      }
+
+      li  {
+        flex-grow: 1;
+        text-align: center;
+        padding-top: 0.4em;
+        padding-bottom: 0.4em;
+        /*outline: solid pink;*/
+      }
 
     </style>
   </head>
   <body>
     <!--START OF PAGE HEADER-->
-    <div style="font-family: Verdana, sans-serif;">
-      <h1>ISAIAH MILLER MUSIC</h1>
+    <div>
+      <h1>Isaiah Miller Music</h1>
       <!--SOCIAL MEDIA LINKS-->
-      <h3>
-        <a target="_blank" href="https://open.spotify.com/artist/0IWwcBflY2HUqRNAB8vPfA?si=oGwXjeB7QYyF_oofdwx-mw">SPOTIFY</a>
-        <a target="_blank" href="https://instagram.com/isaiahj_miller?igshid=lsngv9n0fx41">INSTAGRAM</a>
-        <a target ="_blank" href="https://twitter.com/IsaiahM_Music">TWITTER</a>
-        <a target="_blank" href="https://soundcloud.com/isaiahjmiller">SOUNDCLOUD</a>
-        <a target="_blank" href="https://google.com">OTHER</a>
-      </h3>
+      <ul class="socialmedia">
+        <li><a target="_blank" href="https://open.spotify.com/artist/0IWwcBflY2HUqRNAB8vPfA?si=oGwXjeB7QYyF_oofdwx-mw">spotify</a></li>
+        <li><a target="_blank" href="https://instagram.com/isaiahj_miller?igshid=lsngv9n0fx41">instagram</a></li>
+        <li><a target ="_blank" href="https://twitter.com/IsaiahM_Music">twitter</a></li>
+        <li><a target="_blank" href="https://soundcloud.com/isaiahjmiller">soundcloud</a></li>
+        <li><a target="_blank" href="https://google.com">other</a></li>
+      </ul>
     </div>
     <!--END OF PAGE HEADER-->
 
     <!--START OF CONTENT SECTION-->
-    <div>
-      <h2>Intro Paragraph</h2>
-      <p>
+    <div class="content">
+      <h2>Introduction Statement: <span style="color: orange;">Attention</span> Grabber</h2>
+      <div class="flexcontainer">
+      <p class="flex1">
        (Insert text here) Example: My name is Isaiah Miller. I am a rising
         artist in Detroit. I have released music on Spotify and have more
         to come. Follow me to stay updated!
       </p>
+      <p class="flex2">Here is another paragraph.How long is the width?I am testing this out.</p>
+    </div>
     </div>
     <!--END OF CONTENT SECTION-->
 
